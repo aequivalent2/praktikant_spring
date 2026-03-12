@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Thymeleaf Demo</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+
+<div class="container">
+    <h1>Thymeleaf Konzept</h1>
+
+    <p class="greeting" th:text="${message}">Standard-Text (wird ersetzt)</p>
+
+    <div class="info-box">
+        <p>Dieses Layout wird serverseitig gerendert.</p>
+    </div>
+</div>
+
+</body>
+</html>
